@@ -82,3 +82,14 @@ add necessary nx-plugin
 to install nx-plugin at workspace level.
 you can install @nrwl/node instead of express.if you want to use other web frameork.
   
+
+***
+Create Proejct type App
+---
+
+`yarn nx g @nrwl/express:app <projectname>`
+
+For this demo i create 2 express app for hosting pakcage api like below.
+- api-learning_app
+- second api-learning_cms
+
