@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@demo-nx/api-buildable": ["packages/api-buildable/src/index.ts"],
-      "@demo-nx/api-nobuild": ["packages/api-nobuild/src/index.ts"]
+      "@demo-nx/api-nobuild": ["packages/api-nobuild/src/index.ts"],
+      "@demo-nx/api-publishable": ["packages/api-publishable/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -4,6 +4,7 @@
   "projects": {
     "api-buildable": "packages/api-buildable",
     "api-learning-app": "apps/api-learning-app",
-    "api-nobuild": "packages/api-nobuild"
+    "api-nobuild": "packages/api-nobuild",
+    "api-publishable": "packages/api-publishable"
   }
 }
