@@ -93,3 +93,16 @@ For this demo i create 2 express app for hosting pakcage api like below.
 - api-learning_app
 - second api-learning_cms
 
+
+***
+
+Create lib(Packages) 
+---
+
+This demo is going to create 3 project like below
+
+- `yarn nx g @nrwl/js:lib api-nobuild`
+- `yarn nx g @nrwl/js:lib api-buildable`
+- `yarn nx g @nrwl/js:lib api-publishable`
+
+to explain you about buildable and publishable of nx feature.

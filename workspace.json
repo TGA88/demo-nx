@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "api-learning-app": "apps/api-learning-app"
+    "api-learning-app": "apps/api-learning-app",
+    "api-nobuild": "packages/api-nobuild"
   }
 }
