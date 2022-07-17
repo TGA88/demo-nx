@@ -1,16 +1,16 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/api-learning-app/src",
+  "sourceRoot": "apps/learningapp-service/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/api-learning-app",
-        "main": "apps/api-learning-app/src/main.ts",
-        "tsConfig": "apps/api-learning-app/tsconfig.app.json",
-        "assets": ["apps/api-learning-app/src/assets"]
+        "outputPath": "dist/apps/learningapp-service",
+        "main": "apps/learningapp-service/src/main.ts",
+        "tsConfig": "apps/learningapp-service/tsconfig.app.json",
+        "assets": ["apps/learningapp-service/src/assets"]
       },
       "configurations": {
         "production": {
@@ -19,8 +19,8 @@
           "inspect": false,
           "fileReplacements": [
             {
-              "replace": "apps/api-learning-app/src/environments/environment.ts",
-              "with": "apps/api-learning-app/src/environments/environment.prod.ts"
+              "replace": "apps/learningapp-service/src/environments/environment.ts",
+              "with": "apps/learningapp-service/src/environments/environment.prod.ts"
             }
           ]
         }
@@ -29,11 +29,11 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "api-learning-app:build"
+        "buildTarget": "learningapp-service:build"
       },
       "configurations": {
         "production": {
-          "buildTarget": "api-learning-app:build:production"
+          "buildTarget": "learningapp-service:build:production"
         }
       }
     },
@@ -41,14 +41,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/api-learning-app/**/*.ts"]
+        "lintFilePatterns": ["apps/learningapp-service/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/api-learning-app"],
+      "outputs": ["coverage/apps/learningapp-service"],
       "options": {
-        "jestConfig": "apps/api-learning-app/jest.config.ts",
+        "jestConfig": "apps/learningapp-service/jest.config.ts",
         "passWithNoTests": true
       }
     }

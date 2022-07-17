@@ -90,8 +90,8 @@ Create Proejct type App
 `yarn nx g @nrwl/express:app <projectname>`
 
 For this demo i create 2 express app for hosting pakcage api like below.
-- api-learning_app
-- second api-learning_cms
+- learningapp-service
+- learningcms-service
 
 
 ***
@@ -106,3 +106,17 @@ This demo is going to create 3 project like below
 - `yarn nx g @nrwl/js:lib api-publishable --publishable --importPath=@demo-nx/api-publishable` --> option importPath to define npm package name as systax `@<npm scope name>/<packagename>`
 
 to explain you about buildable and publishable of nx feature.
+
+***
+
+Using lib
+---
+
+you can import local dependency immidiately because nx use path alias in tsconfig.base.json to set alias name refer to other project 
+
+for example
+
+in leraningapp-service's main.ts
+```
+import {apiNobuild} from '@demo-nx/api-nobuild'
+```

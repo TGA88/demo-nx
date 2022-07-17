@@ -3,8 +3,8 @@
   "version": 2,
   "projects": {
     "api-buildable": "packages/api-buildable",
-    "api-learning-app": "apps/api-learning-app",
     "api-nobuild": "packages/api-nobuild",
-    "api-publishable": "packages/api-publishable"
+    "api-publishable": "packages/api-publishable",
+    "learningapp-service": "apps/learningapp-service"
   }
 }
