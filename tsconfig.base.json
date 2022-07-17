@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@demo-nx/api-buildable": ["packages/api-buildable/src/index.ts"],
+      "@demo-nx/api-nobuild": ["packages/api-nobuild/src/index.ts"],
+      "@demo-nx/api-publishable": ["packages/api-publishable/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "api-buildable": "packages/api-buildable",
+    "api-nobuild": "packages/api-nobuild",
+    "api-publishable": "packages/api-publishable",
+    "learningapp-service": "apps/learningapp-service"
+  }
+}
