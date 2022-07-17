@@ -102,7 +102,7 @@ Create lib(Packages)
 This demo is going to create 3 project like below
 
 - `yarn nx g @nrwl/js:lib api-nobuild`
-- `yarn nx g @nrwl/js:lib api-buildable`
-- `yarn nx g @nrwl/js:lib api-publishable`
+- `yarn nx g @nrwl/js:lib api-buildable --buildable`
+- `yarn nx g @nrwl/js:lib api-publishable --publishable`
 
 to explain you about buildable and publishable of nx feature.
